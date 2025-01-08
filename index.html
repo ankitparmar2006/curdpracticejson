@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome icons -->
+</head>
+<body>
+
+<!-- Navbar with Cart Icon -->
+<div class="navbar">
+    <!-- Cart icon with item count -->
+    <div class="cart-icon" onclick="showCart()">
+        <span class="cart1">0</span> <!-- Cart icon pe item count -->
+        <i class="fa fa-shopping-cart"></i>
+    </div>
+</div>
+
+<!-- Add to Cart Button -->
+<button onclick="addcart()">Add to Cart</button>
+<button onclick="removecart()">Remove from Cart</button>
+
+<!-- Cart items section -->
+<div id="cartItems" class="cart-items">
+    <h3>Your Cart</h3>
+    <ul id="cartList">
+        <!-- Cart items will be displayed here -->
+    </ul>
+    <button onclick="closeCart()">Close</button>
+</div>
+
+<script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

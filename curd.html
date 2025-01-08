@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="fetchData()">
+    
+    <table border="4" cellspacing="20px" cellpadding="15px">
+        <thead>
+                <tr>
+
+                <th>carname</th>
+                <th>carprice</th>
+                <th>carcolor</th>
+                <th>carbrand</th>
+
+                <th>delete</th>
+
+            </tr>
+            </thead>
+
+            <tbody id="show">
+            </tbody>
+    </table>
+
+    <br> <br>
+
+    <form action="">
+       Enter your name <input type="text" id="name"> <br> <br>
+       Enter your price <input type="text" id="price"> <br> <br>
+       Enter your color <input type="text" id="color"> <br> <br>
+       Enter your brand <input type="text" id="brand"> <br> <br>
+
+       <input type="submit" onclick="return ins()">
+
+    </form>
+
+
+
+    <script src="curd.js"></script>
+</body>
+</html>
